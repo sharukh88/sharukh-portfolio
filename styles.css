@@ -1,0 +1,48 @@
+:root {
+	--section-padding: 5rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+	color: #1f2937;
+}
+
+section {
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+}
+
+.hero {
+	background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.section-title {
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+.project-card {
+	border: 1px solid #e5e7eb;
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.skill-pill {
+	background-color: #f3f4f6;
+	border: 1px solid #e5e7eb;
+	border-radius: 999px;
+	display: inline-block;
+	font-size: 0.9rem;
+	margin: 0.35rem 0.35rem 0 0;
+	padding: 0.35rem 0.8rem;
+}
