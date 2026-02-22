@@ -37,6 +37,14 @@ section {
 	box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
 
+.experience-logo {
+	width: 44px;
+	height: 44px;
+	object-fit: contain;
+	border-radius: 0.5rem;
+	flex-shrink: 0;
+}
+
 .skill-pill {
 	background-color: #f3f4f6;
 	border: 1px solid #e5e7eb;
