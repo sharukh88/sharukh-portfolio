@@ -176,16 +176,36 @@
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 project-card">
               <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">Operational Efficiency Analysis</h3>
+                <h3 class="h5 card-title">House Price Prediction</h3>
                 <p class="card-text text-secondary">
-                  Analyzed process bottlenecks across operations data and
-                  identified optimization opportunities. Delivered
-                  recommendations that supported faster cycle times and resource
-                  planning.
+                  Built an end-to-end machine learning regression model to
+                  predict residential property prices using Kaggle’s House
+                  Prices dataset. Performed data cleaning, feature engineering,
+                  log transformation, outlier removal, and optimized an XGBoost
+                  model using cross-validation to improve predictive
+                  performance.
                 </p>
-                <p class="small text-muted mb-3">Tools: Excel, SQL, Tableau</p>
+                <p class="small fw-semibold mb-1">Key Results:</p>
+                <ul class="small text-secondary ps-3 mb-3">
+                  <li>
+                    Engineered key features and log-transformed SalePrice to
+                    improve target distribution
+                  </li>
+                  <li>
+                    Reduced variance with IQR-based outlier filtering and a full
+                    preprocessing pipeline
+                  </li>
+                  <li>
+                    Outperformed baseline regression using tuned XGBoost with
+                    5-fold cross-validation (RMSE)
+                  </li>
+                </ul>
+                <p class="small text-muted mb-3">
+                  Tools:Python, Pandas, NumPy, Scikit-learn, XGBoost,
+                  Matplotlib, Jupyter Notebook
+                </p>
                 <a
-                  href="https://github.com/sharukh88/Operational-Efficiency-Analysis"
+                  href="https://github.com/sharukh88/House-Prices-Prediction"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-outline-primary btn-sm align-self-start"
