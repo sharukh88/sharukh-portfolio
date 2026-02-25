@@ -80,7 +80,7 @@
               problems with clean data workflows and measurable outcomes.
             </p>
             <p class="hero-meta mb-4">
-              📍 New Jersey | 🎓 M.S. Computer Science | 📊 Open to Data Analyst
+              📍 Monmouth Junction, NJ | 🎓 M.S. Computer Science | 📊 Open to Data Analyst
               Roles
             </p>
             <div class="d-flex justify-content-center gap-2">
@@ -287,9 +287,12 @@
                 </p>
                 <p class="small fw-semibold mb-1">Key Results:</p>
                 <ul class="small text-secondary ps-3 mb-3">
-                  <li>Random Forest achieved 95.83% accuracy</li>
                   <li>
-                    Linear Regression achieved 91.85% accuracy in 3.09 seconds
+                    Random Forest achieved <strong>95.83%</strong> accuracy
+                  </li>
+                  <li>
+                    Linear Regression achieved <strong>91.85%</strong> accuracy
+                    in <strong>3.09 seconds</strong>
                   </li>
                   <li>
                     Elastic Net delivered competitive accuracy with faster
@@ -323,14 +326,18 @@
                 <p class="small fw-semibold mb-1">Key Results:</p>
                 <ul class="small text-secondary ps-3 mb-3">
                   <li>
-                    Buying Low strategy finished at $5,070,936, exceeding the
-                    initial $5.0M allocation
+                    Buying Low strategy finished at
+                    <strong>$5,070,936</strong>, exceeding the initial
+                    <strong>$5.0M</strong> allocation
                   </li>
                   <li>
-                    Buying High strategy finished at $4,950,123, below starting
-                    capital
+                    Buying High strategy finished at
+                    <strong>$4,950,123</strong>, below starting capital
                   </li>
-                  <li>Buying Low outperformed Buying High by $130,609</li>
+                  <li>
+                    Buying Low outperformed Buying High by
+                    <strong>$130,609</strong>
+                  </li>
                   <li>
                     Normalized USD vs JPY MTM curves to analyze FX impact on
                     portfolio performance
@@ -374,7 +381,7 @@
                   </li>
                   <li>
                     Outperformed baseline regression using tuned XGBoost with
-                    5-fold cross-validation (RMSE)
+                    <strong>5-fold</strong> cross-validation (RMSE)
                   </li>
                 </ul>
                 <p class="small text-muted mb-3">
@@ -530,7 +537,9 @@
             </p>
             <p class="mb-1">
               <strong>Email:</strong>
-              <a href="mailto:sharukh.khan88nj@gmail.com"
+              <a
+                href="mailto:sharukh.khan88nj@gmail.com"
+                class="contact-link-btn contact-link-primary"
                 >sharukh.khan88nj@gmail.com</a
               >
             </p>
@@ -540,6 +549,7 @@
                 href="https://www.linkedin.com/in/sharukh-khan-1294b120a/"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="contact-link-btn contact-link-outline"
                 >linkedin.com/in/sharukh-khan-1294b120a/</a
               >
             </p>
@@ -549,6 +559,7 @@
                 href="https://github.com/sharukh88"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="contact-link-btn contact-link-outline"
                 >github.com/sharukh88</a
               >
             </p>
@@ -573,5 +584,44 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      (() => {
+        const navLinks = Array.from(
+          document.querySelectorAll('.navbar .nav-link[href^="#"]')
+        );
+        const sections = navLinks
+          .map((link) => document.querySelector(link.getAttribute('href')))
+          .filter(Boolean);
+
+        if (!navLinks.length || !sections.length) {
+          return;
+        }
+
+        const setActive = (id) => {
+          navLinks.forEach((link) => {
+            const isActive = link.getAttribute('href') === `#${id}`;
+            link.classList.toggle('active-section', isActive);
+            link.setAttribute('aria-current', isActive ? 'page' : 'false');
+          });
+        };
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                setActive(entry.target.id);
+              }
+            });
+          },
+          {
+            rootMargin: '-40% 0px -50% 0px',
+            threshold: 0.01,
+          }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+        setActive(sections[0].id);
+      })();
+    </script>
   </body>
 </html>
