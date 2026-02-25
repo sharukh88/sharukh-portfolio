@@ -92,7 +92,13 @@ section .container {
 .hero-btn-primary {
 	background-color: var(--brand-primary);
 	border-color: var(--brand-primary);
+	border-radius: 8px;
 	color: #ffffff;
+	font-weight: 600;
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		transform 0.2s ease;
 }
 
 .hero-btn-primary:hover,
@@ -100,12 +106,20 @@ section .container {
 	background-color: var(--brand-primary-hover);
 	border-color: var(--brand-primary-hover);
 	color: #ffffff;
+	transform: translateY(-1px);
 }
 
 .hero-btn-secondary {
 	background-color: transparent;
 	border: 1px solid #475569;
+	border-radius: 8px;
 	color: #475569;
+	font-weight: 600;
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		color 0.2s ease,
+		transform 0.2s ease;
 }
 
 .hero-btn-secondary:hover,
@@ -113,6 +127,7 @@ section .container {
 	background-color: #f1f5f9;
 	border-color: #334155;
 	color: #334155;
+	transform: translateY(-1px);
 }
 
 .section-title {
@@ -124,7 +139,7 @@ section .container {
 #experience .project-card,
 #projects .project-card,
 #education .project-card,
-#skills .col-md-4,
+#skills .skill-group-card,
 #contact .col-lg-8 {
 	border: 1px solid var(--card-border);
 	border-radius: 12px;
@@ -148,22 +163,26 @@ section .container {
 	flex-shrink: 0;
 }
 
-.skill-pill {
+#skills .skill-pill {
 	background-color: #f1f7f6;
 	border: 1px solid #d8ebe7;
 	border-radius: 20px;
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	font-size: 0.92rem;
 	font-weight: 500;
+	line-height: 1.25;
 	margin: 0.4rem 0.45rem 0 0;
+	max-width: 100%;
 	padding: 0.5rem 0.75rem;
+	white-space: normal;
 	transition:
 		background-color 0.2s ease,
 		transform 0.2s ease;
 }
 
-.skill-pill:hover,
-.skill-pill:focus {
+#skills .skill-pill:hover,
+#skills .skill-pill:focus {
 	background-color: #e7f2f0;
 	transform: translateY(-1px);
 }
@@ -172,8 +191,9 @@ section .container {
 	row-gap: 1.1rem;
 }
 
-#skills .col-md-4 {
+#skills .skill-group-card {
 	background: #ffffff;
+	height: 100%;
 	padding: 1.35rem 1.2rem;
 }
 
@@ -260,6 +280,16 @@ section .container {
 	border-radius: 8px;
 	font-weight: 600;
 	padding: 0.35rem 0.75rem;
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		color 0.2s ease,
+		transform 0.2s ease;
+}
+
+#projects .btn:hover,
+#projects .btn:focus {
+	transform: translateY(-1px);
 }
 
 #education .project-card {
@@ -383,6 +413,20 @@ a:focus-visible,
 }
 
 @media (max-width: 575.98px) {
+	#home .d-flex {
+		flex-wrap: wrap;
+	}
+
+	#home .d-flex .btn {
+		width: 100%;
+	}
+
+	#skills .skill-pill {
+		font-size: 0.88rem;
+		margin: 0.35rem 0.35rem 0 0;
+		padding: 0.45rem 0.7rem;
+	}
+
 	#contact .contact-link-btn {
 		display: block;
 		margin-left: 0;

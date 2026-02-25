@@ -497,29 +497,52 @@
         </div>
 
         <div class="row g-4">
-          <div class="col-md-4">
-            <h3 class="h6 text-uppercase text-muted">Data Analysis</h3>
-            <span class="skill-pill">Data Cleaning</span>
-            <span class="skill-pill">Exploratory Analysis</span>
-            <span class="skill-pill">Statistical Analysis</span>
-            <span class="skill-pill">A/B Testing</span>
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-group-card">
+              <h3 class="h6 text-uppercase text-muted">
+                Data Analysis &amp; Business Intelligence
+              </h3>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Data Cleaning &amp; Preprocessing</span>
+              <span class="skill-pill">Exploratory Data Analysis (EDA)</span>
+              <span class="skill-pill">Statistical Analysis</span>
+              <span class="skill-pill">A/B Testing</span>
+              <span class="skill-pill">KPI &amp; Revenue Analysis</span>
+              <span class="skill-pill">Forecasting</span>
+            </div>
           </div>
 
-          <div class="col-md-4">
-            <h3 class="h6 text-uppercase text-muted">Tools &amp; Languages</h3>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">SQL</span>
-            <span class="skill-pill">Excel</span>
-            <span class="skill-pill">Tableau</span>
-            <span class="skill-pill">Power BI</span>
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-group-card">
+              <h3 class="h6 text-uppercase text-muted">Programming &amp; Tools</h3>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Excel</span>
+              <span class="skill-pill">Power BI</span>
+              <span class="skill-pill">Tableau</span>
+              <span class="skill-pill">Jupyter Notebook</span>
+              <span class="skill-pill">Git / GitHub</span>
+            </div>
           </div>
 
-          <div class="col-md-4">
-            <h3 class="h6 text-uppercase text-muted">Machine Learning</h3>
-            <span class="skill-pill">Regression</span>
-            <span class="skill-pill">Classification</span>
-            <span class="skill-pill">Feature Engineering</span>
-            <span class="skill-pill">Model Evaluation</span>
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-group-card">
+              <h3 class="h6 text-uppercase text-muted">
+                Machine Learning &amp; Modeling
+              </h3>
+              <span class="skill-pill">Regression (Linear, Elastic Net)</span>
+              <span class="skill-pill">Classification</span>
+              <span class="skill-pill">Random Forest</span>
+              <span class="skill-pill">XGBoost</span>
+              <span class="skill-pill"
+                >Model Evaluation (RMSE, R², Cross-Validation)</span
+              >
+              <span class="skill-pill">Feature Engineering</span>
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">TensorFlow</span>
+            </div>
           </div>
         </div>
       </div>
@@ -584,44 +607,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script>
-      (() => {
-        const navLinks = Array.from(
-          document.querySelectorAll('.navbar .nav-link[href^="#"]')
-        );
-        const sections = navLinks
-          .map((link) => document.querySelector(link.getAttribute('href')))
-          .filter(Boolean);
-
-        if (!navLinks.length || !sections.length) {
-          return;
-        }
-
-        const setActive = (id) => {
-          navLinks.forEach((link) => {
-            const isActive = link.getAttribute('href') === `#${id}`;
-            link.classList.toggle('active-section', isActive);
-            link.setAttribute('aria-current', isActive ? 'page' : 'false');
-          });
-        };
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                setActive(entry.target.id);
-              }
-            });
-          },
-          {
-            rootMargin: '-40% 0px -50% 0px',
-            threshold: 0.01,
-          }
-        );
-
-        sections.forEach((section) => observer.observe(section));
-        setActive(sections[0].id);
-      })();
-    </script>
+    <script src="script.js" defer></script>
   </body>
 </html>
