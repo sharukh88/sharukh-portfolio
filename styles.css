@@ -17,7 +17,49 @@ section {
 }
 
 .hero {
-	background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+	background: linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
+}
+
+.hero-name {
+	font-size: clamp(2.7rem, 4.2vw, 3.3rem);
+	line-height: 1.15;
+}
+
+.hero-headline {
+	color: #334155;
+	font-size: clamp(1.3rem, 2vw, 1.6rem);
+	line-height: 1.35;
+}
+
+.hero-meta {
+	color: #6b7280;
+	font-size: 0.95rem;
+}
+
+.hero-btn-primary {
+	background-color: #1e3a8a;
+	border-color: #1e3a8a;
+	color: #ffffff;
+}
+
+.hero-btn-primary:hover,
+.hero-btn-primary:focus {
+	background-color: #1e357d;
+	border-color: #1e357d;
+	color: #ffffff;
+}
+
+.hero-btn-secondary {
+	background-color: transparent;
+	border: 1px solid #475569;
+	color: #475569;
+}
+
+.hero-btn-secondary:hover,
+.hero-btn-secondary:focus {
+	background-color: #f1f5f9;
+	border-color: #334155;
+	color: #334155;
 }
 
 .section-title {
