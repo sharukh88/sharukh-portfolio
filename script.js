@@ -87,6 +87,12 @@
   /* ---------- animated stat counters ---------- */
   const counters = document.querySelectorAll(".stat-number");
 
+  const formatStat = (value, decimals) =>
+    value.toLocaleString("en-US", {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    });
+
   const animateCounter = (el) => {
     const target = parseFloat(el.dataset.count);
     const decimals = parseInt(el.dataset.decimals || "0", 10);
@@ -97,7 +103,7 @@
     const tick = (now) => {
       const t = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - t, 3);
-      el.textContent = (target * eased).toFixed(decimals) + suffix;
+      el.textContent = formatStat(target * eased, decimals) + suffix;
       if (t < 1) requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
@@ -106,7 +112,8 @@
   if (prefersReducedMotion) {
     counters.forEach((el) => {
       el.textContent =
-        parseFloat(el.dataset.count).toFixed(
+        formatStat(
+          parseFloat(el.dataset.count),
           parseInt(el.dataset.decimals || "0", 10)
         ) + (el.dataset.suffix || "");
     });
