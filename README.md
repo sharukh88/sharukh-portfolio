@@ -1,72 +1,57 @@
-# Sharukh Khan — Data Analyst Portfolio
+# Sharukh Khan — AI & Data Analyst Portfolio
 
-A clean, responsive personal portfolio website showcasing experience, analytics projects, education, skills, and contact information.
+A modern, dark-themed personal portfolio showcasing my experience as an AI & Data Analyst — built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step.
 
 ## Overview
 
-This project is a static portfolio site built with semantic HTML, custom CSS, and a small JavaScript enhancement for active navigation state on scroll.
+Single-page static site with a custom design system: glassmorphism cards, an animated terminal hero, scroll-reveal animations, animated stat counters, a typing effect, and a vertical experience timeline.
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript (vanilla)
-- Bootstrap 5 (CDN)
-
-## Project Structure
-
-- `index.html` — Main page layout and content
-- `styles.css` — Custom styling and responsive polish
-- `script.js` — Navbar active-section highlighting logic
-- `images/` — Logos and static image assets
+- HTML5 (semantic markup)
+- CSS3 (custom properties, grid, scroll-aware animations)
+- JavaScript (vanilla — IntersectionObserver, requestAnimationFrame)
+- Google Fonts (Inter, Space Grotesk, JetBrains Mono)
 
 ## Features
 
-- Responsive single-page layout
-- Professional section hierarchy (Hero, Experience, Projects, Education, Skills, Contact)
-- Card-based project and experience presentation
-- Skill tags for quick technical scanning
-- Scroll-aware active navigation state
-- Accessible focus styles and mobile-friendly button behavior
+- 🌙 Modern dark theme with gradient accents and ambient background glows
+- 💻 Interactive terminal-style hero card
+- ⌨️ Typing effect cycling through specialties
+- 📊 Animated stat counters (triggered on scroll)
+- 🧭 Scroll progress bar + scroll-aware active navigation
+- 📜 Vertical experience timeline with company logos
+- 🃏 Project cards with metric highlights and tech tags
+- 🏅 Certifications section (ML Specialization, AWS)
+- 📱 Fully responsive with a full-screen mobile menu
+- ♿ Respects `prefers-reduced-motion` for accessibility
+
+## Project Structure
+
+- `index.html` — Page layout and content
+- `styles.css` — Design system and responsive styles
+- `script.js` — Animations and interactive behavior
+- `images/` — Logos and static assets
 
 ## Run Locally
-
-Because this is a static site, you can run it directly in a browser.
-
-### Option 1: Open directly
-
-1. Open `index.html` in your browser.
-
-### Option 2: Use a local server (recommended)
-
-If you have Python installed:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open:
-
-```text
-http://localhost:8000
-```
+Then open `http://localhost:8000` — or just open `index.html` directly in a browser.
 
 ## Deployment (GitHub Pages)
 
-1. Push your latest changes to GitHub.
+1. Push to GitHub.
 2. Go to **Settings → Pages**.
-3. Set source to the correct branch/folder (commonly `main` / root).
+3. Set source to `main` / root.
 4. Wait for the Pages deployment to complete.
-
-## Customization Notes
-
-- Update text/content in `index.html`.
-- Adjust colors and spacing via CSS variables in `styles.css`.
-- Keep interactive behavior minimal and maintainable in `script.js`.
 
 ## Author
 
-Sharukh Khan
+**Sharukh Khan** — AI & Data Analyst
 
-- LinkedIn: https://www.linkedin.com/in/sharukh-khan-1294b120a/
-- GitHub: https://github.com/sharukh88
+- 📧 sharukh.khan88nj@gmail.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/sharukh-khan-1294b120a/)
+- 🐙 [GitHub](https://github.com/sharukh88)

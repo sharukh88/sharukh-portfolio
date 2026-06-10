@@ -5,608 +5,534 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portfolio of Sharukh Khan - Data Analyst specializing in Python, SQL, and Machine Learning."
+      content="Portfolio of Sharukh Khan — AI & Data Analyst specializing in Python, SQL, machine learning, and AI-driven workflows with Claude and RevScale."
     />
-    <title>Sharukh Khan | Data Analyst Portfolio</title>
+    <meta property="og:title" content="Sharukh Khan | AI & Data Analyst" />
+    <meta
+      property="og:description"
+      content="AI & Data Analyst turning data into insights that move revenue. Python · SQL · Machine Learning · Claude (Anthropic)."
+    />
+    <title>Sharukh Khan | AI &amp; Data Analyst</title>
 
-    <!-- Bootstrap 5 CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>📊</text></svg>"
+    />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top"
-    >
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#home">Sharukh Khan</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar" id="navbar">
+      <nav class="navbar-inner container">
+        <a href="#home" class="brand">
+          <span class="brand-mark">SK</span>
+          <span class="brand-text">Sharukh&nbsp;Khan</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li>
+            <a href="#contact" class="nav-link nav-cta">Contact</a>
+          </li>
+        </ul>
+
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar"
-          aria-expanded="false"
+          class="nav-toggle"
+          id="navToggle"
           aria-label="Toggle navigation"
+          aria-expanded="false"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span></span><span></span><span></span>
         </button>
+      </nav>
+    </header>
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="row align-items-center justify-content-center g-4">
-          <div class="col-lg-8 text-center">
-            <p class="text-uppercase text-muted small fw-semibold mb-2">
-              Personal Portfolio
+    <main>
+      <!-- ============ HERO ============ -->
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="hero-badge reveal">
+              <span class="pulse-dot"></span> Open to AI &amp; Data Analyst roles
             </p>
-            <h1 class="hero-name fw-bold mb-4">Sharukh Khan</h1>
-            <h2 class="hero-headline fw-bold mb-4">
-              Data Analyst Specializing in Business Intelligence &amp;
-              Predictive Modeling
+            <h1 class="hero-title reveal">
+              Hi, I'm <span class="gradient-text">Sharukh Khan</span>
+            </h1>
+            <h2 class="hero-subtitle reveal">
+              AI &amp; Data Analyst <span class="divider-dot">·</span>
+              <span class="typed-wrapper"
+                ><span id="typed"></span><span class="typed-cursor">|</span></span
+              >
             </h2>
-            <p class="lead text-secondary mb-5">
-              Data Analyst focused on turning raw data into actionable business
-              insights through clear reporting, robust SQL analysis, and
-              practical machine learning solutions. I enjoy solving business
-              problems with clean data workflows and measurable outcomes.
+            <p class="hero-lead reveal">
+              M.S. in Computer Science from NJIT with hands-on experience
+              cleaning and analyzing large CRM and operational datasets,
+              building AI workflows with
+              <strong>Claude (Anthropic)</strong> and
+              <strong>RevScale</strong>, and turning data into insights that
+              actually move revenue.
             </p>
-            <p class="hero-meta mb-4">
-              📍 Monmouth Junction, NJ | 🎓 M.S. Computer Science | 📊 Open to Data Analyst
-              Roles
-            </p>
-            <div class="d-flex justify-content-center gap-2">
-              <a href="#projects" class="btn btn-lg hero-btn-primary"
-                >View Projects</a
-              >
-              <a href="#contact" class="btn btn-lg hero-btn-secondary"
-                >Contact Me</a
-              >
+            <div class="hero-meta reveal">
+              <span>📍 Monmouth Junction, NJ</span>
+              <span>🎓 M.S. Computer Science — NJIT</span>
+            </div>
+            <div class="hero-actions reveal">
+              <a href="#projects" class="btn btn-primary">
+                View Projects
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+            <div class="hero-socials reveal">
+              <a href="https://github.com/sharukh88" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/sharukh-khan-1294b120a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              </a>
+              <a href="mailto:sharukh.khan88nj@gmail.com" aria-label="Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-card reveal" aria-hidden="true">
+            <div class="terminal">
+              <div class="terminal-bar">
+                <span class="t-dot t-red"></span>
+                <span class="t-dot t-yellow"></span>
+                <span class="t-dot t-green"></span>
+                <span class="terminal-title">sharukh@portfolio ~ </span>
+              </div>
+              <pre class="terminal-body"><code><span class="t-prompt">$</span> <span class="t-cmd">whoami</span>
+<span class="t-out">AI &amp; Data Analyst @ Bridgepointe Technologies</span>
+
+<span class="t-prompt">$</span> <span class="t-cmd">python skills.py --top</span>
+<span class="t-out">[ Python, SQL, R, Machine Learning ]</span>
+<span class="t-out">[ Claude (Anthropic), RevScale, Pandas ]</span>
+
+<span class="t-prompt">$</span> <span class="t-cmd">cat impact.log | tail -3</span>
+<span class="t-out">✓ 300+ accounts prepped for AI prospecting</span>
+<span class="t-out">✓ XGBoost model — R² 96.4%</span>
+<span class="t-out">✓ +42% online sales via data-driven loyalty</span>
+
+<span class="t-prompt">$</span> <span class="t-cursor-block"></span></code></pre>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="bg-light">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title">Experience</h2>
-          <p class="text-secondary mb-0">
-            Professional experience and impact across analytics-focused roles.
-          </p>
+        <div class="container">
+          <div class="stats-strip reveal">
+            <div class="stat">
+              <span class="stat-number" data-count="300" data-suffix="+">0</span>
+              <span class="stat-label">Accounts optimized for AI prospecting</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="96.4" data-decimals="1" data-suffix="%">0</span>
+              <span class="stat-label">Best model R² — XGBoost</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="42" data-suffix="%">0</span>
+              <span class="stat-label">Online sales growth driven by data</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="5" data-suffix="+">0</span>
+              <span class="stat-label">Years working with real business data</span>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="row justify-content-center g-4">
-          <div class="col-lg-10">
-            <div class="card h-100 project-card">
-              <div class="card-body">
-                <div
-                  class="d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-2"
-                >
-                  <div class="d-flex align-items-start gap-3">
-                    <img
-                      src="images/BPT-logo.jpeg"
-                      alt="Bridgepointe Technologies logo"
-                      class="experience-logo"
-                    />
-                    <div>
-                      <h3 class="h5 card-title mb-1">
-                        IT Strategist & AI Engineer
-                      </h3>
-                      <p class="text-muted mb-2">
-                        Bridgepointe Technologies • Morristown, NJ
-                      </p>
-                    </div>
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">About</p>
+            <h2 class="section-title">Data → Insights → <span class="gradient-text">Revenue</span></h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p>
+                I'm an AI &amp; Data Analyst at
+                <strong>Bridgepointe Technologies</strong>, where I engineer
+                end-to-end AI workflows using Claude (Anthropic) and RevScale to
+                automate lead generation and account targeting — writing Python
+                scripts to process and structure data, and SQL queries to score
+                and prioritize high-value leads.
+              </p>
+              <p>
+                I also own and operate <strong>Truly Yogurt</strong> in New
+                Brunswick, NJ, where I apply the same analytical mindset to a
+                real business: demand forecasting, ad-spend optimization, and a
+                loyalty program built on platform data that grew online sales
+                by 42%.
+              </p>
+              <p>
+                My background spans tech, retail, and food service — with
+                Python, SQL, and machine learning applied to real business
+                problems throughout.
+              </p>
+            </div>
+            <div class="about-cards reveal">
+              <div class="glass-card">
+                <div class="glass-card-icon">🤖</div>
+                <h3>AI Workflows</h3>
+                <p>Claude-powered pipelines integrated into RevScale for automated prospecting.</p>
+              </div>
+              <div class="glass-card">
+                <div class="glass-card-icon">📈</div>
+                <h3>ML Modeling</h3>
+                <p>Regression, classification &amp; forecasting with scikit-learn and XGBoost.</p>
+              </div>
+              <div class="glass-card">
+                <div class="glass-card-icon">🗄️</div>
+                <h3>SQL &amp; Data Pipelines</h3>
+                <p>CRM data cleaning, lead scoring, and pipeline planning at scale.</p>
+              </div>
+              <div class="glass-card">
+                <div class="glass-card-icon">💼</div>
+                <h3>Business Ownership</h3>
+                <p>P&amp;L responsibility — budgets, forecasting, and marketing ROI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">Career</p>
+            <h2 class="section-title">Experience</h2>
+            <p class="section-sub">Professional impact across analytics-focused roles.</p>
+          </div>
+
+          <div class="timeline">
+            <!-- Bridgepointe -->
+            <article class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-head">
+                  <img src="images/BPT-logo.jpeg" alt="Bridgepointe Technologies logo" class="company-logo" />
+                  <div>
+                    <h3>AI &amp; Data Analyst Associate</h3>
+                    <p class="company">Bridgepointe Technologies · Morristown, NJ (Hybrid)</p>
                   </div>
-                  <p class="small text-muted mb-2">April 2022 – Present</p>
+                  <span class="timeline-date">Apr 2025 – Present</span>
                 </div>
-                <ul class="small text-secondary ps-3 mb-0">
-                  <li>
-                    Used AI-powered prospecting tools (RevScale, LinkedIn) to
-                    identify and generate targeted lists of C-level and VP-level
-                    leads across 300+ accounts.
-                  </li>
-                  <li>
-                    Applied AI-driven analytics within RevScale to segment
-                    accounts and optimize drip campaigns, improving focus on
-                    high-value prospects.
-                  </li>
-                  <li>
-                    Leveraged the Signal CRM platform with predictive insights
-                    and Python/SQL analysis to prioritize high-value leads and
-                    pipeline opportunities.
-                  </li>
-                  <li>
-                    Conducted trend analysis and forecasting on client data to
-                    identify IT modernization opportunities and support business
-                    cases for cloud and cybersecurity solutions.
-                  </li>
-                  <li>
-                    Produced machine-learning-assisted research reports on
-                    industry trends, providing C-level clients with actionable
-                    insights for technology adoption.
-                  </li>
+                <ul class="timeline-points">
+                  <li>Ingested and cleaned <strong>1,000+ rows</strong> of CRM and spreadsheet data, standardizing datasets for AI-driven prospecting workflows across <strong>300+ accounts</strong>.</li>
+                  <li>Engineered end-to-end AI workflows using <strong>Claude (Anthropic)</strong> — writing Python scripts to process and structure data — then integrated them into <strong>RevScale</strong> to automate lead generation and account targeting.</li>
+                  <li>Collaborated with senior IT Strategists to translate business requirements into data pipelines and AI automations for C-level and VP-level prospect identification.</li>
+                  <li>Wrote <strong>SQL queries</strong> against CRM data to score and prioritize high-value leads by predicted deal value, directly supporting sales pipeline planning.</li>
+                  <li>Conducted trend analysis and demand forecasting on client data to identify IT modernization opportunities.</li>
                 </ul>
+                <div class="tag-row">
+                  <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Claude</span><span class="tag">RevScale</span><span class="tag">CRM Data</span>
+                </div>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-lg-10">
-            <div class="card h-100 project-card">
-              <div class="card-body">
-                <div
-                  class="d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-2"
-                >
-                  <div class="d-flex align-items-start gap-3">
-                    <img
-                      src="images/TY-logo.jpg"
-                      alt="Truly Yogurt logo"
-                      class="experience-logo"
-                    />
-                    <div>
-                      <h3 class="h5 card-title mb-1">Owner</h3>
-                      <p class="text-muted mb-2">
-                        Truly Yogurt • New Brunswick, NJ
-                      </p>
-                    </div>
+            <!-- Truly Yogurt -->
+            <article class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-head">
+                  <img src="images/TY-logo.jpg" alt="Truly Yogurt logo" class="company-logo" />
+                  <div>
+                    <h3>Owner &amp; Business Analyst</h3>
+                    <p class="company">Truly Yogurt · New Brunswick, NJ</p>
                   </div>
-                  <p class="small text-muted mb-2">September 2022 – Present</p>
+                  <span class="timeline-date">May 2022 – Present</span>
                 </div>
-                <ul class="small text-secondary ps-3 mb-0">
-                  <li>
-                    Utilized data analysis to optimize inventory management by
-                    analyzing sales and demand data with Excel and Clover POS
-                    system, resulting in a 12% reduction in waste and improved
-                    stock levels.
-                  </li>
-                  <li>
-                    Enhanced revenue by 20% and cut costs by 15% by leveraging
-                    data insights to balance budgets, forecast demand, and
-                    optimize supplier relationships using Excel, QuickBooks,
-                    Google Sheets, and Clover.
-                  </li>
-                  <li>
-                    Analyzed social media metrics (Instagram, TikTok, Google
-                    Analytics) to measure the effectiveness of marketing
-                    campaigns, leading to a 30% increase in online orders and
-                    expanded customer base.
-                  </li>
-                  <li>
-                    Implemented a loyalty program and data-driven marketing
-                    strategies using DoorDash and UberEats data, which increased
-                    online sales by 25% and improved customer engagement.
-                  </li>
-                  <li>
-                    Managed and mentored a team of 6, creating data-driven
-                    schedules and performance metrics analysis, which improved
-                    employee job satisfaction by 30% and productivity by 15%
-                  </li>
+                <ul class="timeline-points">
+                  <li>Analyzed daily sales, inventory, and budget data with Excel and Clover POS — <strong>12% waste reduction</strong> and improved stock management.</li>
+                  <li>Built demand forecasting models and financial reports driving a <strong>20% revenue increase</strong> and <strong>15% cost reduction</strong>.</li>
+                  <li>Tracked ad performance across Instagram, TikTok, and Google Analytics, reallocating spend to highest-ROI channels — <strong>+27% online orders</strong>.</li>
+                  <li>Used DoorDash and UberEats platform data to launch a loyalty program that <strong>increased online sales by 42%</strong>.</li>
+                  <li>Created scheduling and performance dashboards in Excel, reducing scheduling conflicts across a team of 6.</li>
                 </ul>
+                <div class="tag-row">
+                  <span class="tag">Excel</span><span class="tag">Clover POS</span><span class="tag">Google Analytics</span><span class="tag">Forecasting</span>
+                </div>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-lg-10">
-            <div class="card h-100 project-card">
-              <div class="card-body">
-                <div
-                  class="d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-2"
-                >
-                  <div class="d-flex align-items-start gap-3">
-                    <img
-                      src="images/rutgers-logo.svg"
-                      alt="Rutgers logo"
-                      class="experience-logo"
-                    />
-                    <div>
-                      <h3 class="h5 card-title mb-1">Assistant Manager</h3>
-                      <p class="text-muted mb-2">
-                        Rutgers Quick Shop • New Brunswick, NJ
-                      </p>
-                    </div>
+            <!-- Rutgers Quick Shop -->
+            <article class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-head">
+                  <img src="images/rutgers-logo.svg" alt="Rutgers logo" class="company-logo" />
+                  <div>
+                    <h3>Assistant Manager</h3>
+                    <p class="company">Rutgers Quick Shop · New Brunswick, NJ</p>
                   </div>
-                  <p class="small text-muted mb-2">June 2020 – May 2022</p>
+                  <span class="timeline-date">Jun 2020 – May 2022</span>
                 </div>
-                <ul class="small text-secondary ps-3 mb-0">
-                  <li>
-                    Utilized data analysis (Excel/SQL on POS data) to optimize
-                    inventory management, reducing waste by 12% and improving
-                    stock levels.
-                  </li>
-                  <li>
-                    Enhanced revenue by 10% by building demand and budgeting
-                    reports to forecast sales and optimize supplier
-                    relationships.
-                  </li>
-                  <li>
-                    Created performance reports on sales trends and inventory
-                    turnover to support better operational decisions.
-                  </li>
+                <ul class="timeline-points">
+                  <li>Used SQL and Excel on POS data to optimize inventory management — <strong>12% waste reduction</strong> and improved stock levels.</li>
+                  <li>Built demand forecasting and budgeting reports, contributing to a <strong>10% revenue increase</strong>.</li>
+                  <li>Produced weekly sales trend and inventory turnover reports to support operational decisions.</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="bg-white">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title">Projects</h2>
-          <p class="text-secondary mb-0">
-            Selected analytics projects demonstrating business impact and
-            technical depth.
-          </p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 project-card">
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">
-                  Weather Analysis Using Machine Learning
-                </h3>
-                <p class="card-text text-secondary">
-                  Built and evaluated multiple machine learning models to
-                  predict weather patterns using Kaggle’s weather dataset.
-                  Compared Linear Regression, Random Forest, and Elastic Net
-                  based on accuracy and training efficiency to identify the
-                  optimal balance between performance and computational cost.
-                </p>
-                <p class="small fw-semibold mb-1">Key Results:</p>
-                <ul class="small text-secondary ps-3 mb-3">
-                  <li>
-                    Random Forest achieved <strong>95.83%</strong> accuracy
-                  </li>
-                  <li>
-                    Linear Regression achieved <strong>91.85%</strong> accuracy
-                    in <strong>3.09 seconds</strong>
-                  </li>
-                  <li>
-                    Elastic Net delivered competitive accuracy with faster
-                    training time
-                  </li>
-                </ul>
-                <p class="small text-muted mb-3">
-                  Tools: Python, Pandas, Scikit-learn, Matplotlib, Jupyter
-                  Notebook
-                </p>
-                <a
-                  href="https://github.com/sharukh88/Weather-Analysis-Using-ML"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-outline-primary btn-sm mt-auto align-self-start"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 project-card">
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">Equity Portfolio Management</h3>
-                <p class="card-text text-secondary">
-                  Developed a rule-based equity portfolio backtesting engine in
-                  R to evaluate rebalancing strategies across 10 technology
-                  stocks using daily 2018 market data.
-                </p>
-                <p class="small fw-semibold mb-1">Key Results:</p>
-                <ul class="small text-secondary ps-3 mb-3">
-                  <li>
-                    Buying Low strategy finished at
-                    <strong>$5,070,936</strong>, exceeding the initial
-                    <strong>$5.0M</strong> allocation
-                  </li>
-                  <li>
-                    Buying High strategy finished at
-                    <strong>$4,950,123</strong>, below starting capital
-                  </li>
-                  <li>
-                    Buying Low outperformed Buying High by
-                    <strong>$130,609</strong>
-                  </li>
-                  <li>
-                    Normalized USD vs JPY MTM curves to analyze FX impact on
-                    portfolio performance
-                  </li>
-                </ul>
-                <p class="small text-muted mb-3">
-                  Tools: R, data.table, dplyr, ggplot2, plotly
-                </p>
-                <a
-                  href="https://github.com/sharukh88/Equity-Portfolio-Management"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-outline-primary btn-sm align-self-start"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 project-card">
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">House Price Prediction</h3>
-                <p class="card-text text-secondary">
-                  Built an end-to-end machine learning regression model to
-                  predict residential property prices using Kaggle’s House
-                  Prices dataset. Performed data cleaning, feature engineering,
-                  log transformation, outlier removal, and optimized an XGBoost
-                  model using cross-validation to improve predictive
-                  performance.
-                </p>
-                <p class="small fw-semibold mb-1">Key Results:</p>
-                <ul class="small text-secondary ps-3 mb-3">
-                  <li>
-                    Engineered key features and log-transformed SalePrice to
-                    improve target distribution
-                  </li>
-                  <li>
-                    Reduced variance with IQR-based outlier filtering and a full
-                    preprocessing pipeline
-                  </li>
-                  <li>
-                    Outperformed baseline regression using tuned XGBoost with
-                    <strong>5-fold</strong> cross-validation (RMSE)
-                  </li>
-                </ul>
-                <p class="small text-muted mb-3">
-                  Tools: Python, Pandas, NumPy, Scikit-learn, XGBoost,
-                  Matplotlib, Jupyter Notebook
-                </p>
-                <a
-                  href="https://github.com/sharukh88/House-Prices-Prediction"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-outline-primary btn-sm align-self-start"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="bg-white">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title">Education</h2>
-          <p class="text-secondary mb-0">
-            Academic background supporting analytics and machine learning work.
-          </p>
-        </div>
-
-        <div class="row justify-content-center g-4">
-          <div class="col-lg-10">
-            <div class="card h-100 project-card">
-              <div class="card-body">
-                <div
-                  class="d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-2"
-                >
-                  <div class="d-flex align-items-start gap-3">
-                    <img
-                      src="images/njit-logo.svg"
-                      alt="NJIT logo"
-                      class="experience-logo"
-                    />
-                    <div>
-                      <h3 class="h5 card-title mb-1">
-                        Master of Science in Computer Science (Data Science & AI
-                        Focus)
-                      </h3>
-                      <p class="text-muted mb-2">
-                        New Jersey Institute of Technology • Newark, NJ
-                      </p>
-                    </div>
-                  </div>
-                  <p class="small text-muted mb-2">
-                    September 2023 – January 2025
-                  </p>
+                <div class="tag-row">
+                  <span class="tag">SQL</span><span class="tag">Excel</span><span class="tag">POS Data</span>
                 </div>
-                <ul class="small text-secondary ps-3 mb-0">
-                  <li>
-                    Relevant Coursework: Data Science in R, Advanced Data
-                    Management Systems, Cloud Computing, Data Structures &
-                    Algorithms, Database Systems
-                  </li>
-                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">Portfolio</p>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-sub">Machine learning and analytics projects with measurable results.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-top">
+                <div class="project-icon">🏠</div>
+                <a href="https://github.com/sharukh88/House-Prices-Prediction" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="House Price Prediction on GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+              <h3>House Price Prediction Model</h3>
+              <p>
+                End-to-end ML regression pipeline — data cleaning, feature
+                engineering, log transformation, outlier removal, and
+                cross-validated XGBoost tuning on Kaggle's House Prices dataset.
+              </p>
+              <div class="metric-highlight">
+                <span class="metric-value">R² 96.4%</span>
+                <span class="metric-desc">XGBoost vs 78.5% baseline Linear Regression</span>
+              </div>
+              <div class="tag-row">
+                <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Seaborn</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-top">
+                <div class="project-icon">🌦️</div>
+                <a href="https://github.com/sharukh88/Weather-Analysis-Using-ML" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Weather Pattern Classification on GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+              <h3>Weather Pattern Classification</h3>
+              <p>
+                Benchmarked 4 machine learning models for weather prediction,
+                comparing accuracy against training efficiency to select the
+                optimal production model.
+              </p>
+              <div class="metric-highlight">
+                <span class="metric-value">95.83% accuracy</span>
+                <span class="metric-desc">Random Forest — best accuracy/efficiency balance</span>
+              </div>
+              <div class="tag-row">
+                <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Random Forest</span><span class="tag">Elastic Net</span><span class="tag">Pandas</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-top">
+                <div class="project-icon">📊</div>
+                <a href="https://github.com/sharukh88/Equity-Portfolio-Management" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Equity Portfolio Management on GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+              <h3>Equity Portfolio Management</h3>
+              <p>
+                Simulated managing a $5M equity portfolio in R across 10 major
+                tech stocks — rule-based buy-low/buy-high rebalancing with
+                dividend tracking, benchmarked against a custom High-Tech Index,
+                with returns converted to JPY using historical FX rates.
+              </p>
+              <div class="metric-highlight">
+                <span class="metric-value">$5M simulated</span>
+                <span class="metric-desc">Buy-low strategy outperformed by $130K+</span>
+              </div>
+              <div class="tag-row">
+                <span class="tag">R</span><span class="tag">data.table</span><span class="tag">dplyr</span><span class="tag">ggplot2</span><span class="tag">plotly</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-cta reveal">
+            <a href="https://github.com/sharukh88" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              See more on GitHub
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CERTIFICATIONS ============ -->
+      <section id="certifications" class="section section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">Credentials</p>
+            <h2 class="section-title">Certifications</h2>
+          </div>
+          <div class="cert-grid">
+            <article class="cert-card reveal">
+              <div class="cert-icon">🧠</div>
+              <div>
+                <h3>Machine Learning Specialization</h3>
+                <p class="cert-issuer">Stanford University &amp; DeepLearning.AI · July 2025</p>
+                <p class="cert-desc">Supervised &amp; unsupervised learning, neural networks, decision trees, and ML best practices across 3 courses.</p>
+              </div>
+            </article>
+            <article class="cert-card reveal">
+              <div class="cert-icon">☁️</div>
+              <div>
+                <h3>AWS Academy Cloud Developing</h3>
+                <p class="cert-issuer">Amazon Web Services · Dec 2024</p>
+                <p class="cert-desc">40 hours — cloud application development, AWS SDKs, serverless, storage, and deployment.</p>
+              </div>
+            </article>
+            <article class="cert-card reveal">
+              <div class="cert-icon">🏗️</div>
+              <div>
+                <h3>AWS Academy Cloud Foundations</h3>
+                <p class="cert-issuer">Amazon Web Services · Oct 2024</p>
+                <p class="cert-desc">20 hours — core AWS services, cloud concepts, security, and architecture fundamentals.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">Toolbox</p>
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-group reveal">
+              <h3><span class="skill-group-icon">💻</span> Languages</h3>
+              <div class="tag-row">
+                <span class="tag tag-lg">Python</span><span class="tag tag-lg">SQL</span><span class="tag tag-lg">R</span><span class="tag tag-lg">Java</span><span class="tag tag-lg">JavaScript</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><span class="skill-group-icon">🧪</span> Data &amp; ML</h3>
+              <div class="tag-row">
+                <span class="tag tag-lg">Pandas</span><span class="tag tag-lg">NumPy</span><span class="tag tag-lg">Scikit-learn</span><span class="tag tag-lg">XGBoost</span><span class="tag tag-lg">TensorFlow</span><span class="tag tag-lg">PyTorch</span><span class="tag tag-lg">Matplotlib</span><span class="tag tag-lg">Seaborn</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><span class="skill-group-icon">🤖</span> AI Tools</h3>
+              <div class="tag-row">
+                <span class="tag tag-lg">Claude (Anthropic)</span><span class="tag tag-lg">RevScale</span><span class="tag tag-lg">ChatGPT</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><span class="skill-group-icon">📊</span> Visualization</h3>
+              <div class="tag-row">
+                <span class="tag tag-lg">Power BI</span><span class="tag tag-lg">Tableau</span><span class="tag tag-lg">Google Analytics</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><span class="skill-group-icon">🗄️</span> Databases</h3>
+              <div class="tag-row">
+                <span class="tag tag-lg">MySQL</span><span class="tag tag-lg">Oracle SQL</span><span class="tag tag-lg">MongoDB</span><span class="tag tag-lg">Neo4j</span><span class="tag tag-lg">Amazon Redshift</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><span class="skill-group-icon">🛠️</span> Cloud &amp; Business Tools</h3>
+              <div class="tag-row">
+                <span class="tag tag-lg">AWS</span><span class="tag tag-lg">GitHub</span><span class="tag tag-lg">Jupyter</span><span class="tag tag-lg">VS Code</span><span class="tag tag-lg">Excel</span><span class="tag tag-lg">QuickBooks</span><span class="tag tag-lg">Clover POS</span>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="col-lg-10">
-            <div class="card h-100 project-card">
-              <div class="card-body">
-                <div
-                  class="d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-2"
-                >
-                  <div class="d-flex align-items-start gap-3">
-                    <img
-                      src="images/rutgers-logo.svg"
-                      alt="Rutgers University logo"
-                      class="experience-logo"
-                    />
-                    <div>
-                      <h3 class="h5 card-title mb-1">
-                        Bachelor of Science in Computer Science
-                      </h3>
-                      <p class="text-muted mb-2">
-                        Rutgers University • New Brunswick, NJ
-                      </p>
-                    </div>
-                  </div>
-                  <p class="small text-muted mb-2">September 2021 – May 2023</p>
-                </div>
-                <ul class="small text-secondary ps-3 mb-0">
-                  <li>
-                    Algorithms, Data Management, Numerical Computing, Software
-                    Methodology
-                  </li>
-                </ul>
+      <!-- ============ EDUCATION ============ -->
+      <section id="education" class="section section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">Academics</p>
+            <h2 class="section-title">Education</h2>
+          </div>
+          <div class="edu-grid">
+            <article class="edu-card reveal">
+              <img src="images/njit-logo.svg" alt="NJIT logo" class="edu-logo" />
+              <div>
+                <h3>M.S., Computer Science</h3>
+                <p class="edu-school">New Jersey Institute of Technology · Newark, NJ</p>
+                <p class="edu-date">Sep 2023 – Dec 2024</p>
               </div>
-            </div>
+            </article>
+            <article class="edu-card reveal">
+              <img src="images/rutgers-logo.svg" alt="Rutgers University logo" class="edu-logo" />
+              <div>
+                <h3>B.S., Computer Science</h3>
+                <p class="edu-school">Rutgers University – New Brunswick · New Brunswick, NJ</p>
+                <p class="edu-date">Sep 2021 – May 2023</p>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-light">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title">Skills</h2>
-          <p class="text-secondary mb-0">
-            Core technical capabilities for end-to-end data analysis.
-          </p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="skill-group-card">
-              <h3 class="h6 text-uppercase text-muted">
-                Data Analysis &amp; Business Intelligence
-              </h3>
-              <span class="skill-pill">SQL</span>
-              <span class="skill-pill">Data Cleaning &amp; Preprocessing</span>
-              <span class="skill-pill">Exploratory Data Analysis (EDA)</span>
-              <span class="skill-pill">Statistical Analysis</span>
-              <span class="skill-pill">A/B Testing</span>
-              <span class="skill-pill">KPI &amp; Revenue Analysis</span>
-              <span class="skill-pill">Forecasting</span>
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="contact-card reveal">
+            <p class="section-eyebrow">Contact</p>
+            <h2 class="section-title">Let's Build Something <span class="gradient-text">Data-Driven</span></h2>
+            <p class="contact-lead">
+              I'm currently open to AI &amp; Data Analyst opportunities. If
+              you're looking for someone who can turn raw data into insights
+              that move revenue, let's talk.
+            </p>
+            <div class="contact-actions">
+              <a href="mailto:sharukh.khan88nj@gmail.com" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                sharukh.khan88nj@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/sharukh-khan-1294b120a/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn</a>
+              <a href="https://github.com/sharukh88" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub</a>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="skill-group-card">
-              <h3 class="h6 text-uppercase text-muted">Programming &amp; Tools</h3>
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">Java</span>
-              <span class="skill-pill">Pandas</span>
-              <span class="skill-pill">NumPy</span>
-              <span class="skill-pill">Excel</span>
-              <span class="skill-pill">Power BI</span>
-              <span class="skill-pill">Tableau</span>
-              <span class="skill-pill">Jupyter Notebook</span>
-              <span class="skill-pill">Git / GitHub</span>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="skill-group-card">
-              <h3 class="h6 text-uppercase text-muted">
-                Machine Learning &amp; Modeling
-              </h3>
-              <span class="skill-pill">Regression (Linear, Elastic Net)</span>
-              <span class="skill-pill">Classification</span>
-              <span class="skill-pill">Random Forest</span>
-              <span class="skill-pill">XGBoost</span>
-              <span class="skill-pill"
-                >Model Evaluation (RMSE, R², Cross-Validation)</span
-              >
-              <span class="skill-pill">Feature Engineering</span>
-              <span class="skill-pill">Scikit-learn</span>
-              <span class="skill-pill">TensorFlow</span>
-            </div>
+            <p class="contact-meta">📍 Monmouth Junction, NJ · (732) 519-2312</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-white">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="section-title mb-3">Contact</h2>
-            <p class="text-secondary mb-4">
-              I am currently open to Data Analyst opportunities. Let’s connect
-              to discuss how I can contribute to your team.
-            </p>
-            <p class="mb-1">
-              <strong>Email:</strong>
-              <a
-                href="mailto:sharukh.khan88nj@gmail.com"
-                class="contact-link-btn contact-link-primary"
-                >sharukh.khan88nj@gmail.com</a
-              >
-            </p>
-            <p class="mb-1">
-              <strong>LinkedIn:</strong>
-              <a
-                href="https://www.linkedin.com/in/sharukh-khan-1294b120a/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-link-btn contact-link-outline"
-                >linkedin.com/in/sharukh-khan-1294b120a/</a
-              >
-            </p>
-            <p class="mb-4">
-              <strong>GitHub:</strong>
-              <a
-                href="https://github.com/sharukh88"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-link-btn contact-link-outline"
-                >github.com/sharukh88</a
-              >
-            </p>
-            <a class="btn btn-primary" href="mailto:sharukh.khan88nj@gmail.com"
-              >Send Email</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="border-top py-4">
-      <div class="container text-center text-muted small">
-        &copy; 2026 Sharukh Khan. All rights reserved.
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 Sharukh Khan. Designed &amp; built with care.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+        </a>
       </div>
     </footer>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
     <script src="script.js" defer></script>
   </body>
 </html>
