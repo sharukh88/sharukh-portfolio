@@ -135,11 +135,11 @@
   /* ---------- hero typing effect ---------- */
   const typedEl = document.getElementById("typed");
   const phrases = [
-    "Machine Learning",
+    "LLM Data Pipelines",
     "Python & SQL",
-    "AI Workflows with Claude",
+    "Anthropic Claude API",
+    "ETL & Data Cleaning",
     "Demand Forecasting",
-    "Business Intelligence",
   ];
 
   if (typedEl) {

@@ -1,6 +1,6 @@
-# Sharukh Khan — AI & Data Analyst Portfolio
+# Sharukh Khan — AI & Data Engineer Portfolio
 
-A modern, dark-themed personal portfolio showcasing my experience as an AI & Data Analyst — built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step.
+A modern, dark-themed personal portfolio showcasing my experience as an AI & Data Engineer — built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step.
 
 ## Overview
 
@@ -50,7 +50,7 @@ Then open `http://localhost:8000` — or just open `index.html` directly in a br
 
 ## Author
 
-**Sharukh Khan** — AI & Data Analyst
+**Sharukh Khan** — AI & Data Engineer
 
 - 📧 sharukh.khan88nj@gmail.com
 - 💼 [LinkedIn](https://www.linkedin.com/in/sharukh-khan-1294b120a/)
